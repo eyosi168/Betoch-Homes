@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomePage.css";
+import "./HomePage.scss";
 import SearchBar from "../../searchBar/SearchBar.jsx";
 
 function HomePage() {
@@ -21,6 +21,14 @@ function HomePage() {
             <div className="box">
                 <h1>16+</h1>
                 <h2>Years of experiance</h2>
+            </div>
+            <div className="box">
+                <h1>200</h1>
+                <h2>Award Gained</h2>
+            </div>
+            <div className="box">
+                <h1>2000+</h1>
+                <h2>Property Ready</h2>
             </div>
           </div>
         </div>
