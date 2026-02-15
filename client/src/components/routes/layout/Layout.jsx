@@ -11,7 +11,7 @@ function Layout() {
           <Navbar></Navbar>
         </div>
         <div className="content">
-           {/* from the app page  */}
+           
           <Outlet/>
         </div>
       </div>
