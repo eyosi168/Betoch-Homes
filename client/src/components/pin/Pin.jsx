@@ -7,6 +7,7 @@ function Pin({item}) {
   return (
     <Marker position={[item.latitude, item.longitude]}>
       <Popup>
+        {/* gets the data and pin it in size */}
        <div className="popupcontainer">
         <img src={item.img} alt="" />
         <div className="textcontainer">
