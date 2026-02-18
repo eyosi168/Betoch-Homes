@@ -35,7 +35,29 @@ function SinglePage() {
        <div className="features">
         <div className="wrapper">
             <p className="title">Generals</p>
-            <div className="listVertical"></div>
+            <div className="listVertical">
+              <div className="feature">
+                <img src="/utility.png" alt="" />
+                <div className="featureText">
+                  <span>Utilities</span>
+                  <p>Renter is Possible</p>
+                </div>
+              </div>
+              <div className="feature">
+                <img src="/utility.png" alt="" />
+                <div className="featureText">
+                  <span>Utilities</span>
+                  <p>Renter is Possible</p>
+                </div>
+              </div>
+              <div className="feature">
+                <img src="/utility.png" alt="" />
+                <div className="featureText">
+                  <span>Utilities</span>
+                  <p>Renter is Possible</p>
+                </div>
+              </div>
+            </div>
             <p className="title">Sizes</p>
              <div className="sizes"></div>
             <p className="title">Nearby Places</p>
@@ -44,7 +66,16 @@ function SinglePage() {
             <div className="mapContainer">
               <Map items={[singlePostData]}/>
             </div>
-            <div className="buttons"></div>
+            <div className="buttons">
+              <button>
+                <img src="/chat.png" alt="" />
+                Send a Message
+              </button>
+              <button>
+                <img src="/save.png" alt="" />
+                Save the Place
+              </button>
+            </div>
             
           </div>
           </div>      
