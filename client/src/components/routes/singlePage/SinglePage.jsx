@@ -44,17 +44,17 @@ function SinglePage() {
                 </div>
               </div>
               <div className="feature">
-                <img src="/utility.png" alt="" />
+                <img src="/pet.png" alt="" />
                 <div className="featureText">
-                  <span>Utilities</span>
-                  <p>Renter is Possible</p>
+                  <span>Pet Policy</span>
+                  <p>Pet Allowed</p>
                 </div>
               </div>
               <div className="feature">
-                <img src="/utility.png" alt="" />
+                <img src="/fee.png" alt="" />
                 <div className="featureText">
-                  <span>Utilities</span>
-                  <p>Renter is Possible</p>
+                  <span>Propery Fee</span>
+                  <p>Must have 3X the rent in total household income</p>
                 </div>
               </div>
             </div>
