@@ -33,7 +33,11 @@ function SinglePage() {
       </div>
        <div className="features">
         <div className="wrapper">
-
+            <p className="title">Generals</p>
+            <p className="title">Sizes</p>
+            <p className="title">Nearby Places</p>
+            <p className="title">Location</p>
+            
           </div>
           </div>      
     </div>
