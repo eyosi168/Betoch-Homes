@@ -1,4 +1,5 @@
 import React from "react";
+import Chat from "../../chat/Chat";
 import "./profilePage.scss";
 import List from "../../list/List";
 
@@ -35,7 +36,9 @@ function ProfilePage() {
         
       </div>
       <div className="chatContainer">
-        <div className="wrapper"></div>
+        <div className="wrapper">
+            <Chat></Chat>
+        </div>
       </div>
     </div>
   );
