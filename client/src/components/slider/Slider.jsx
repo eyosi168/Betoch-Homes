@@ -3,6 +3,7 @@ import './slider.scss'
 
 function Slider({images}) {
     const[imageIndex,setImageIndex]=useState(null)
+    // the slider logic
     const changeSlide = (direction)=>{
         if (direction==='left'){
             if(imageIndex===0){
