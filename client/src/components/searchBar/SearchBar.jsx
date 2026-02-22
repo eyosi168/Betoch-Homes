@@ -8,6 +8,7 @@ function SearchBar() {
     minPrice: 0,
     maxPrice: 0,
   });
+  
   const swithType = (val) => {
     setQuery((prev) => ({ ...prev, type: val }));
   };
