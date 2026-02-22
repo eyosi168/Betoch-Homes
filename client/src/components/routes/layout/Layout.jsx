@@ -8,6 +8,7 @@ function Layout() {
     <div>
       <div className="layout">
         <div className="navbar">
+          {/* responsive too */}
           <Navbar></Navbar>
         </div>
         <div className="content">
