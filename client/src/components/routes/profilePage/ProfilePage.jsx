@@ -9,6 +9,7 @@ function ProfilePage() {
   const navigate = useNavigate()
   const handleLogout=async()=>{
     try{
+      
      const res=apiRequest.post("/auth/logout")
      localStorage.removeItem("user")
      navigate("/")
