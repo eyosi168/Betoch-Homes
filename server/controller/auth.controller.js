@@ -45,6 +45,7 @@ export const login= async (req, res)=>{
 }
         
 )
+    const {password:userPassword,...userInfo}=user
 
    // res.setHeader("set-cookie","test" + "myValue").json("success")
    
@@ -52,7 +53,7 @@ export const login= async (req, res)=>{
         httpOnly:true,
         maxAge: age,
 
-    }).status(200).json({message:"login succesfull"})
+    }).status(200).json(userInfo)
     }catch(error){
         console.log(err)
         res.status(500).json({message:"failed to login "})
