@@ -30,7 +30,7 @@ function RequireAuth() {
           <Navbar></Navbar>
         </div>
         <div className="content">
-           {/* to the parent layout */}
+          
           <Outlet/>
         </div>
       </div>
