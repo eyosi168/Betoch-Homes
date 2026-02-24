@@ -26,7 +26,7 @@ function RequireAuth() {
      !currentUser? ( <Navigate to="/login"/>):( <div>
       <div className="layout">
         <div className="navbar">
-          {/* responsive too */}
+         
           <Navbar></Navbar>
         </div>
         <div className="content">
