@@ -3,7 +3,7 @@ import Chat from "../../chat/Chat";
 import "./profilePage.scss";
 import List from "../../list/List";
 import apiRequest from "../../../lib/apiRequest";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { Authcontext } from "../../../context/AuthContext";
 
 function ProfilePage() {
