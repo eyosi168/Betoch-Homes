@@ -12,9 +12,9 @@ import userRoute from "./routes/user.route.js"
  app.use(cors({origin: process.env.CLIENT_URL,credentials:true}))
 
  app.use("/api/auth",authRoute)
+ app.use("/api/users",userRoute)
  app.use("/api/posts",postRoute)
  app.use("/api/test",testRoute)
- app.use("/api/users",userRoute)
 
  
  app.listen(8800,()=>{
