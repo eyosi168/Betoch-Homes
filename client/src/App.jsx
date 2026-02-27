@@ -7,6 +7,7 @@ import Login from "./components/routes/login/Login";
 import ProfilePage from "./components/routes/profilePage/ProfilePage";
 import Register from "./components/routes/register/Register";
 import ProfileUpdatePage from "./components/routes/ProfileupdatedPage/ProfileUpdatePage";
+import NewPostPage from "./components/routes/newPostPage/NewPostPage";
 
 function App() {
   const router= createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
          {
           path:"/profile/update",
           element:<ProfileUpdatePage/>
+         },
+         {
+          path:"/add",
+          element:<NewPostPage/>
          },
       ]
     }
