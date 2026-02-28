@@ -5,7 +5,7 @@ import { Authcontext } from "../../../context/AuthContext.jsx";
 
 function HomePage() {
   const {currentUser}=useContext(Authcontext)
-  console.log(currentUser)
+  // console.log(currentUser)
   return (
     <div className="homePage">
       <div className="textContainer">
