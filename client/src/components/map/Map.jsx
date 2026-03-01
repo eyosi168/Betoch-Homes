@@ -6,6 +6,7 @@ import Pin from "../pin/Pin";
 
 function Map({ items }) {
   return (
+    
     <MapContainer
       center={
         items.length === 1
