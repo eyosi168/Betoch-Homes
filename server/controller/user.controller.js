@@ -103,7 +103,7 @@ export const savePost = async (req,res)=>{
                     postId,
                 }
             })
-            res.status(200).json({message:"post saved successfully"})
+            res.status(200).json({message:"post saved"})
         }
        
       
