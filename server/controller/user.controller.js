@@ -88,9 +88,25 @@ export const savePost = async (req,res)=>{
 
             }
         })
+        if(savedPost){
+            await prisma.savedPost.delete({
+                where:{
+                    id: savedPost.id,
+                }
+            })
+            res.status(200).json({message:"post removed from saved list"})
+        }
+        else{
+            await prisma.savedPost.create({
+                data: {
+                    userId:tokenUserId,
+                    postId,
+                }
+            })
+            res.status(200).json({message:"post saved successfully"})
+        }
        
-        res.status(200).json({message:"deleted successfully"})
-
+      
     }catch(err){
         console.log(err)
         res.status(500).json({mesage:"Failed to get users"})
