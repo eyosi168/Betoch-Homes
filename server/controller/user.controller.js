@@ -74,3 +74,25 @@ export const deleteUser = async (req,res)=>{
         res.status(500).json({mesage:"Failed to get users"})
     }
 }
+export const savePost = async (req,res)=>{
+   const postId = req.body.postId
+   const tokenUserId= req.userId
+
+    try{
+        const savedPost = await prisma.savedPost.findUnique({
+            where:{
+                userId_postId:{
+                    userId:tokenUserId,
+                    postId
+                }
+
+            }
+        })
+       
+        res.status(200).json({message:"deleted successfully"})
+
+    }catch(err){
+        console.log(err)
+        res.status(500).json({mesage:"Failed to get users"})
+    }
+}
