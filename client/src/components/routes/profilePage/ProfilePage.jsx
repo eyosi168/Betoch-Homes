@@ -1,13 +1,15 @@
-import React, { useContext } from "react";
+import React, { Suspense, useContext } from "react";
 import Chat from "../../chat/Chat";
 import "./profilePage.scss";
 import List from "../../list/List";
 import apiRequest from "../../../lib/apiRequest";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate,Link, useLoaderData, Await } from "react-router-dom";
 import { Authcontext } from "../../../context/AuthContext";
 
 function ProfilePage() {
+  const data=useLoaderData()
   const{updateUser,currentUser}=useContext(Authcontext)
+
   const navigate = useNavigate()
   const handleLogout=async()=>{
     try{
@@ -50,11 +52,27 @@ function ProfilePage() {
             </Link>
            
           </div>
-          <List/>
+          <Suspense fallback={<p>Loading...</p>}>
+            <Await
+              resolve={data.postResponse}
+              errorElement={<p>Error loading posts!</p>}
+            >
+              {(postResponse) => <List posts={postResponse.data.userPosts}/> }
+         
+            </Await>
+          </Suspense>
           <div className="title">
             <h1>Saved List</h1>
           </div>
-          <List/>
+          <Suspense fallback={<p>Loading...</p>}>
+            <Await
+              resolve={data.postResponse}
+              errorElement={<p>Error loading posts!</p>}
+            >
+              {(postResponse) => <List posts={postResponse.data.savedPosts}/> }
+         
+            </Await>
+          </Suspense>
         </div>
         
       </div>
