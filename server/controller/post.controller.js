@@ -161,7 +161,7 @@ export const deletePost=async(req,res)=>{
         }
 
         await prisma.post.delete({
-            where:{id},
+            where:{id} ,
         })
 
         res.status(200).json({message:"post deleted"})
