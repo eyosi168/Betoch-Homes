@@ -13,7 +13,7 @@ export const getChats = async (req,res)=>{
             }
         })
         
-
+      res.status(200).json(chats)
     }catch(err){
         console.log(err)
         res.status(500).json({mesage:"Failed to get chats"})
