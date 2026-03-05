@@ -35,6 +35,7 @@ function Card({ item }) {
               <img src="/save.png" alt="" />
             </div>
             <div className="icon">
+              
               <img src="/chat.png" alt="" />
             </div>
           </div>
